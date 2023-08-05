@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400");
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF new design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <page class="page" size="Letter" layout="landscape">
+      <!-- Pdf Styling -->
+      <header
+        class="d-flex justify-content-between align-items-center layout-padding"
+      >
+        <img alt="logo-deeppack" src="assets/logos/deeppack.svg" />
+        <span class="text-xs w-600 letter-spacing text-secondary-800"
+          >AI-Powered 3D Load Planning Software</span
+        >
+      </header>
+      <!-- Load Name -->
+      <div
+        class="d-flex flex-column align-items-center justify-content-center gap-1"
+      >
+        <span class="text-md text-primary w-600 letter-spacing"
+          >LOAD NAME 01</span
+        >
+        <span class="text-xs text-secondary-700 w-500 letter-spacing"
+          >Run Name : Run name 01</span
+        >
+      </div>
+
+      <main class="layout-padding">
+        <div class="divider" />
+
+        <!-- Container Dimensions -->
+        <div class="pt-16 d-flex gap-1">
+          <div class="flex-grow-1">
+            <div class="d-flex flex-column gap-1">
+              <span class="w-500 text-secondary-800 text-sm"
+                >Container: 20 ft Standard (1/4)</span
+              >
+              <span class="text-secondary-400 text-xs w-400"
+                >Date :18-05-2021</span
+              >
+            </div>
+          </div>
+          <div class="w-400 text-secondary-800 text-sm">
+            Dimensions (MM) L : 15236 W : 15236 H : 1200
+          </div>
+        </div>
+
+        <!-- Container Stats -->
+        <div class="d-flex gap-3 mt-32">
+          <!-- Weight details -->
+          <div class="d-flex flex-column gap-3">
+            <div
+              style="width: 240px"
+              class="p-16 bg-secondary-100 bordered d-flex flex-column gap-3"
+            >
+              <span class="text-xs w-600 text-secondary-800 letter-spacing"
+                >Weight</span
+              >
+              <span class="text-xs w-400 text-secondary-800"
+                >Filled weight: &nbsp; &nbsp; <b>0.0Kg</b></span
+              >
+              <!-- ProgressBar -->
+              <div>
+                <span class="text-xs w-400 text-secondary-800"
+                  >Weight Utilization: &nbsp; &nbsp;
+                  <b class="text-warn">98%</b>
+                </span>
+
+                <div class="progress-bar">
+                  <div
+                    class="progress-tracker bg-warn"
+                    style="width: 98%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <!-- Volume details -->
+            <div
+              style="width: 240px"
+              class="p-16 bg-secondary-100 bordered d-flex flex-column gap-3"
+            >
+              <span class="text-xs w-600 text-secondary-800 letter-spacing"
+                >Volume</span
+              >
+              <span class="text-xs w-400 text-secondary-800"
+                >Filled volume: &nbsp; &nbsp; <b>0.0Kg</b></span
+              >
+              <!-- ProgressBar -->
+              <div>
+                <span class="text-xs w-400 text-secondary-800"
+                  >Volume Utilization: &nbsp; &nbsp;
+                  <b class="text-success">69%</b>
+                </span>
+
+                <div class="progress-bar">
+                  <div
+                    class="progress-tracker bg-success"
+                    style="width: 69%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Full Container -->
+          <div
+            class="flex-grow-1 bordered container-preview d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="assets/img/full-container.png"
+              alt="full-container-preview"
+            />
+          </div>
+        </div>
+
+        <!-- Unique Products -->
+        <table class="mt-32">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Shape</th>
+              <th>Dimensions (mm)</th>
+              <th>Weight (Kg)</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1 Items name</td>
+              <td>box</td>
+              <td
+                class="d-flex gap-4 align-items-center justify-content-center"
+              >
+                <span class="text-success">L 452</span>
+                <span class="text-success">W 4525</span>
+                <span class="text-success">H 4524</span>
+              </td>
+              <td>356</td>
+              <td>11</td>
+            </tr>
+
+            <tr>
+              <td>2 Items name</td>
+              <td>box</td>
+              <td
+                class="d-flex gap-4 align-items-center justify-content-center"
+              >
+                <span class="text-success">L 452</span>
+                <span class="text-success">W 4525</span>
+                <span class="text-success">H 4524</span>
+              </td>
+              <td>356</td>
+              <td>11</td>
+            </tr>
+
+            <tr>
+              <td>3 Items name</td>
+              <td>box</td>
+              <td
+                class="d-flex gap-4 align-items-center justify-content-center"
+              >
+                <span class="text-success">L 452</span>
+                <span class="text-success">W 4525</span>
+                <span class="text-success">H 4524</span>
+              </td>
+              <td>356</td>
+              <td>11</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Total</td>
+              <td>1500</td>
+              <td>29</td>
+            </tr>
+          </tfoot>
+        </table>
+      </main>
+    </page>
+  </body>
+</html>
