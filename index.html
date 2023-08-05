@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <page class="page" size="Letter" layout="landscape">
+    <page size="Letter" layout="landscape">
       <!-- Pdf Styling -->
       <header
         class="d-flex justify-content-between align-items-center layout-padding"
@@ -54,140 +54,170 @@
           </div>
         </div>
 
-        <!-- Container Stats -->
-        <div class="d-flex gap-3 mt-32">
-          <!-- Weight details -->
-          <div class="d-flex flex-column gap-3">
-            <div
-              style="width: 240px"
-              class="p-16 bg-secondary-100 bordered d-flex flex-column gap-3"
-            >
-              <span class="text-xs w-600 text-secondary-800 letter-spacing"
-                >Weight</span
+        <!-- Section per Page -->
+        <section>
+          <!-- Container Stats -->
+          <div class="d-flex gap-3 mt-32">
+            <!-- Weight details -->
+            <div class="d-flex flex-column gap-3">
+              <div
+                style="width: 240px"
+                class="p-16 bg-secondary-100 bordered d-flex flex-column gap-3"
               >
-              <span class="text-xs w-400 text-secondary-800"
-                >Filled weight: &nbsp; &nbsp; <b>0.0Kg</b></span
-              >
-              <!-- ProgressBar -->
-              <div>
+                <span class="text-xs w-600 text-secondary-800 letter-spacing"
+                  >Weight</span
+                >
                 <span class="text-xs w-400 text-secondary-800"
-                  >Weight Utilization: &nbsp; &nbsp;
-                  <b class="text-warn">98%</b>
-                </span>
+                  >Filled weight: &nbsp; &nbsp; <b>0.0Kg</b></span
+                >
+                <!-- ProgressBar -->
+                <div>
+                  <span class="text-xs w-400 text-secondary-800"
+                    >Weight Utilization: &nbsp; &nbsp;
+                    <b class="text-warn">98%</b>
+                  </span>
 
-                <div class="progress-bar">
-                  <div
-                    class="progress-tracker bg-warn"
-                    style="width: 98%"
-                  ></div>
+                  <div class="progress-bar">
+                    <div
+                      class="progress-tracker bg-warn"
+                      style="width: 98%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Volume details -->
+              <div
+                style="width: 240px"
+                class="p-16 bg-secondary-100 bordered d-flex flex-column gap-3"
+              >
+                <span class="text-xs w-600 text-secondary-800 letter-spacing"
+                  >Volume</span
+                >
+                <span class="text-xs w-400 text-secondary-800"
+                  >Filled volume: &nbsp; &nbsp; <b>0.0Kg</b></span
+                >
+                <!-- ProgressBar -->
+                <div>
+                  <span class="text-xs w-400 text-secondary-800"
+                    >Volume Utilization: &nbsp; &nbsp;
+                    <b class="text-success">69%</b>
+                  </span>
+
+                  <div class="progress-bar">
+                    <div
+                      class="progress-tracker bg-success"
+                      style="width: 69%"
+                    ></div>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- Volume details -->
-            <div
-              style="width: 240px"
-              class="p-16 bg-secondary-100 bordered d-flex flex-column gap-3"
-            >
-              <span class="text-xs w-600 text-secondary-800 letter-spacing"
-                >Volume</span
-              >
-              <span class="text-xs w-400 text-secondary-800"
-                >Filled volume: &nbsp; &nbsp; <b>0.0Kg</b></span
-              >
-              <!-- ProgressBar -->
-              <div>
-                <span class="text-xs w-400 text-secondary-800"
-                  >Volume Utilization: &nbsp; &nbsp;
-                  <b class="text-success">69%</b>
-                </span>
 
-                <div class="progress-bar">
-                  <div
-                    class="progress-tracker bg-success"
-                    style="width: 69%"
-                  ></div>
-                </div>
-              </div>
+            <!-- Full Container -->
+            <div
+              class="flex-grow-1 bordered container-preview d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="assets/img/full-container.png"
+                alt="full-container-preview"
+              />
             </div>
           </div>
 
-          <!-- Full Container -->
-          <div
-            class="flex-grow-1 bordered container-preview d-flex justify-content-center align-items-center"
-          >
-            <img
-              src="assets/img/full-container.png"
-              alt="full-container-preview"
-            />
+          <!-- Unique Products -->
+          <table class="mt-32">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Shape</th>
+                <th>Dimensions (mm)</th>
+                <th>Weight (Kg)</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1 Items name</td>
+                <td>box</td>
+                <td
+                  class="d-flex gap-4 align-items-center justify-content-center"
+                >
+                  <span class="text-success">L 452</span>
+                  <span class="text-success">W 4525</span>
+                  <span class="text-success">H 4524</span>
+                </td>
+                <td>356</td>
+                <td>11</td>
+              </tr>
+
+              <tr>
+                <td>2 Items name</td>
+                <td>box</td>
+                <td
+                  class="d-flex gap-4 align-items-center justify-content-center"
+                >
+                  <span class="text-success">L 452</span>
+                  <span class="text-success">W 4525</span>
+                  <span class="text-success">H 4524</span>
+                </td>
+                <td>356</td>
+                <td>11</td>
+              </tr>
+
+              <tr>
+                <td>3 Items name</td>
+                <td>box</td>
+                <td
+                  class="d-flex gap-4 align-items-center justify-content-center"
+                >
+                  <span class="text-success">L 452</span>
+                  <span class="text-success">W 4525</span>
+                  <span class="text-success">H 4524</span>
+                </td>
+                <td>356</td>
+                <td>11</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Total</td>
+                <td>1500</td>
+                <td>29</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </main>
+    </page>
+
+    <page size="Letter" layout="landscape">
+      <!-- Todo: remove layout-padding from section -->
+      <section class="layout-padding">
+        <div class="grid grid-column-2">
+          <div class="shadow p-16 d-flex gap-2">
+            <div>#1-Shape_5</div>
+
+            <div
+              class="container-preview flex-grow-1 d-flex justify-content-center"
+            >
+              <img src="assets/img/container.png" />
+            </div>
+          </div>
+
+          <div class="shadow p-16 d-flex gap-2">
+            <div>#1-Shape_5</div>
+
+            <div
+              class="container-preview flex-grow-1 d-flex justify-content-center"
+            >
+              <img src="assets/img/container.png" />
+            </div>
           </div>
         </div>
-
-        <!-- Unique Products -->
-        <table class="mt-32">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Shape</th>
-              <th>Dimensions (mm)</th>
-              <th>Weight (Kg)</th>
-              <th>Quantity</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>1 Items name</td>
-              <td>box</td>
-              <td
-                class="d-flex gap-4 align-items-center justify-content-center"
-              >
-                <span class="text-success">L 452</span>
-                <span class="text-success">W 4525</span>
-                <span class="text-success">H 4524</span>
-              </td>
-              <td>356</td>
-              <td>11</td>
-            </tr>
-
-            <tr>
-              <td>2 Items name</td>
-              <td>box</td>
-              <td
-                class="d-flex gap-4 align-items-center justify-content-center"
-              >
-                <span class="text-success">L 452</span>
-                <span class="text-success">W 4525</span>
-                <span class="text-success">H 4524</span>
-              </td>
-              <td>356</td>
-              <td>11</td>
-            </tr>
-
-            <tr>
-              <td>3 Items name</td>
-              <td>box</td>
-              <td
-                class="d-flex gap-4 align-items-center justify-content-center"
-              >
-                <span class="text-success">L 452</span>
-                <span class="text-success">W 4525</span>
-                <span class="text-success">H 4524</span>
-              </td>
-              <td>356</td>
-              <td>11</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Total</td>
-              <td>1500</td>
-              <td>29</td>
-            </tr>
-          </tfoot>
-        </table>
-      </main>
+      </section>
     </page>
   </body>
 </html>

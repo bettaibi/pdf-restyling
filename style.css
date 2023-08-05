@@ -41,6 +41,10 @@ page[size="Letter"][layout="landscape"] {
 }
 /* -------------------------------- pdf ---------------------------------------------------- */
 
+/* section per page */
+main section {
+  page-break-before: always;
+}
 .layout-padding {
   padding: 28px 24px;
 }
@@ -328,6 +332,10 @@ page[size="Letter"][layout="landscape"] {
 }
 .grid-column-2 {
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.shadow {
+  box-shadow: 0px 8px 16px 0px rgba(17, 43, 82, 0.1);
 }
 
 /* Table */
